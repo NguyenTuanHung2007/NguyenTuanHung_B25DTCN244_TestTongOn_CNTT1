@@ -155,9 +155,6 @@ const submitForm = () => {
 // Sửa sản phẩm
 const editProduct = (id) => {
   const product = products.find((p) => p.id === id);
-  if (!product) {
-    return;
-  }
 
   document.getElementById("iName").value = product.name;
   document.getElementById("iPrice").value = product.price;
